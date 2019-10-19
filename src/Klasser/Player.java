@@ -8,17 +8,27 @@ public class Player {
 public Player (String name, int money, boolean win) {
 
 this.name = name;
-this.money = money;
+this.money = 1000;
 this.win = win;
 
 }
 
-public player(){
-   if (this.money => 3000){
+public Player(String name) {
+   this.name = name;
+}
+
+public String getName() {
+   return name;
+}
+
+public int getMoney(money + )
+
+public boolean win (win => 3000){
       return (Player + "Won the game with" + money);
    }
 
+
 }
 
 
-}
+
