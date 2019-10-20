@@ -6,16 +6,16 @@ import Klasser.Player;
 import java.util.Scanner;
 
 public class TheGame {
-    private static final int MAX_MONEY = 3000;
-    public static Dice d1 = new Dice(); //Laver et objekt ved navn d1 ud fra dice klassen
-    public static Dice d2 = new Dice(); //Laver et objekt ved navn d2 ud fra dice klassen
-    public static Scanner key = new Scanner(System.in);
+    private static final int MAX_MONEY = 3000;          // maks for at vinde spillet
+    public static Dice d1 = new Dice();                 //Laver et objekt ved navn d1 ud fra dice klassen
+    public static Dice d2 = new Dice();                 //Laver et objekt ved navn d2 ud fra dice klassen
+    public static Scanner key = new Scanner(System.in); // en scanner
 
-    public static Player player1 = new Player();
-    public static Player player2 = new Player();
+    public static Player player1 = new Player();        // navnet som bliver holdt på spiller 1
+    public static Player player2 = new Player();        // navnet som bliver holdt på spiller 2
 
 
-    //-------------------------------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------------------------------
 
     public static void main(String[] args) {
 
@@ -24,14 +24,20 @@ public class TheGame {
 
         //-------------------------------------------------------------------------------------------------
 
-        int boardplace = (d1 && d2)
+        // start på spillet
 
+        // hvis det er under 3000 som er MAX_MONEY så skal den forsæt med dette
         while ((player1.getMoney() < MAX_MONEY) || (player2.getMoney() < MAX_MONEY)) {
 
-            switch (Boardplace) {
+            public
+
+            switch (player1) {
                 case 1:
-                    "back to home town" + " it's dangerous to go alone, here take" + Player.getmoney + 100;
-                    return boardplace;
+
+                    System.out.println("(BACK TO HOME TOWN)");
+                    System.out.println( "it's dangerous to go alone, here take +100");
+                    System.out.println(player1.addMoney(+100);
+                    break;
                 case 2:
                     "tower" + money + 250
                 case 3:
