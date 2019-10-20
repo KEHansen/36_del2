@@ -35,8 +35,12 @@ public class TheGame {
         // hvis det er under 3000 som er MAX_MONEY så skal den forsæt med dette
         while ((player1.getMoney() < MAX_MONEY) || (player2.getMoney() < MAX_MONEY)) {
 
+            //----------------------------------------------------------------------------------------------------------
+
+            // spiller 1
+
             // kast terningerne
-            System.out.println("___________________________________________________________ ");
+            System.out.println("_____________________________________________________________________________________");
             System.out.println(" ");
             System.out.println("(" + player1.getName() + "!" + " " + "click enter to throw the die)");
             key.nextLine();
@@ -52,7 +56,11 @@ public class TheGame {
 
             boardFields(counter, player1);
 
-            System.out.println("___________________________________________________________ ");
+            //----------------------------------------------------------------------------------------------------------
+
+            // spiller 2
+
+            System.out.println("____________________________________________________________________________________ ");
             System.out.println(" ");
             System.out.println("(" + player2.getName() + "!" + " " + "click enter to throw the die)");
             key.nextLine();
@@ -78,7 +86,9 @@ public class TheGame {
                 case 1:
                     player.addMoney(+100);
                     System.out.println("(BACK TO HOME TOWN)");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println("it's dangerous to go alone, here take 100");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println(" ");
                     System.out.println(player.getName() + " " + "you have: " + player.getMoney() + "points");
                     System.out.println(" ");
@@ -86,7 +96,9 @@ public class TheGame {
                 case 2:
                     player.addMoney(+250);
                     System.out.println("(TOWER)");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println("you saved the princess, she gave you 250");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println(" ");
                     System.out.println(player.getName() + " " + "you have: " + player.getMoney() + "points");
                     System.out.println(" ");
@@ -94,8 +106,10 @@ public class TheGame {
                 case 3:
                     player.addMoney(-100);
                     System.out.println("(CRATER)");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println("you nearly fell down the crater, only some money felt down");
                     System.out.println("you lost 100");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println(" ");
                     System.out.println(player.getName() + " " + "you have: " + player.getMoney() + "points");
                     System.out.println(" ");
@@ -103,8 +117,10 @@ public class TheGame {
                 case 4:
                     player.addMoney(+100);
                     System.out.println("(PALACE GATE)");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println("you sells some off you stuff to the prince");
                     System.out.println("you earned 100");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println(" ");
                     System.out.println(player.getName() + " " + "you have: " + player.getMoney() + "points");
                     System.out.println(" ");
@@ -112,8 +128,10 @@ public class TheGame {
                 case 5:
                     player.addMoney(-20);
                     System.out.println("(COLD DESERT)");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println("you´re about to head into th cold Desert. So you buy a scarf");
                     System.out.println("you lose 20");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println(" ");
                     System.out.println(player.getName() + " " + "you have: " + player.getMoney() + "points");
                     System.out.println(" ");
@@ -121,15 +139,19 @@ public class TheGame {
                 case 6:
                     player.addMoney(+180);
                     System.out.println("(WALLED CITY)");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println("you sell a merchant a rare brick to a wall");
                     System.out.println("you earn 180");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println(" ");
                     System.out.println(player.getName() + " " + "you have: " + player.getMoney() + "points");
                     System.out.println(" ");
                     break;
                 case 7:
                     System.out.println("(MONASTERY)");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println("you just went by, nothing happened");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println(" ");
                     System.out.println(player.getName() + " " + "you have: " + player.getMoney() + "points");
                     System.out.println(" ");
@@ -137,8 +159,10 @@ public class TheGame {
                 case 8:
                     player.addMoney(-70);
                     System.out.println("(BLACK CAVE)");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println("you dropped some money on your way out, never to be found again");
                     System.out.println("you lost 70");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println(" ");
                     System.out.println(player.getName() + " " + "you have: " + player.getMoney() + "points");
                     System.out.println(" ");
@@ -146,8 +170,10 @@ public class TheGame {
                 case 9:
                     player.addMoney(+60);
                     System.out.println("(HUTS IN THE MOUNTAIN)");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println("you show the villages memes. They love it and give you a present");
                     System.out.println("you earn 60");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println(" ");
                     System.out.println(player.getName() + " " + "you have: " + player.getMoney() + "points");
                     System.out.println(" ");
@@ -155,12 +181,16 @@ public class TheGame {
                 case 10:
                     player.addMoney(-80);
                     System.out.println("(THE WEREWOLF-WALL)");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println("you ran in fear for a hairy beast");
                     System.out.println("you lose 80 but ran so fast to get a ekstra turn");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println(" ");
                     System.out.println(player.getName() + " " + "you have: " + player.getMoney() + "points");
                     System.out.println(" ");
                     System.out.println("(click enter to roll again!)");
+                    //-------------------------------------------------------------------------------------------------
+                    // ekstra tur
                     key.nextLine();
                     roll1 = d1.roll();
                     roll2 = d2.roll();
@@ -171,8 +201,10 @@ public class TheGame {
                 case 11:
                     player.addMoney(-50);
                     System.out.println("(THE PIT)");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println("you throw some money to check how deep the pit is");
                     System.out.println("you lose -50");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println(" ");
                     System.out.println(player.getName() + " " + "you have: " + player.getMoney() + "points");
                     System.out.println(" ");
@@ -180,8 +212,10 @@ public class TheGame {
                 case 12:
                     player.addMoney(+650);
                     System.out.println("(GOLDMINE)");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println("you struck GOOOOLD!!!");
                     System.out.println("ah yea alot of money, you earn 650!");
+                    System.out.println("-----------------------------------------------------------------------");
                     System.out.println(" ");
                     System.out.println(player.getName() + " " + "you have: " + player.getMoney() + "points");
                     System.out.println(" ");
