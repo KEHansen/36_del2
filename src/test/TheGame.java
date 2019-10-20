@@ -6,27 +6,31 @@ import Klasser.Player;
 import java.util.Scanner;
 
 public class TheGame {
-    private final int MAX = 12;
+    private static final int MAX_MONEY = 3000;
     public static Dice d1 = new Dice(); //Laver et objekt ved navn d1 ud fra dice klassen
     public static Dice d2 = new Dice(); //Laver et objekt ved navn d2 ud fra dice klassen
     public static Scanner key = new Scanner(System.in);
+
+    public static Player player1 = new Player();
+    public static Player player2 = new Player();
 
 
     //-------------------------------------------------------------------------------------------------
 
     public static void main(String[] args) {
 
-        // play intro som ses i bunden
+        // play intro, som ses i bunden.
         playStart();
+
         //-------------------------------------------------------------------------------------------------
 
         int boardplace = (d1 && d2)
 
-        while (Boardplace > 0 || Boardplace < MAX) {
+        while ((player1.getMoney() < MAX_MONEY) || (player2.getMoney() < MAX_MONEY)) {
 
             switch (Boardplace) {
                 case 1:
-                    "back to home town" + " it'sdangerous to go alone, here take" + money + 100
+                    "back to home town" + " it's dangerous to go alone, here take" + Player.getmoney + 100;
                     return boardplace;
                 case 2:
                     "tower" + money + 250
@@ -53,17 +57,19 @@ public class TheGame {
 
                 default:
                     if (boardplace > MAX) {
-                        return
-                        case 1
-                            ;
+                        return case 1;
+
+                    }
+                    else if (win == true) {
+                        Player + "Won the game with" + money
+                        break;
                     }
 
-
-                    break;
 
             }
         }
     }
+
 
     //-----------------------------------------------------------------------------------
     public static void playStart(){
@@ -76,7 +82,7 @@ public class TheGame {
         System.out.println(" ");
         System.out.println("Player 1, enter your name:");
         String p1 = key.nextLine();
-        Player player1 = new Player(p1);
+       player1.setName(p1);
 
 
         System.out.println( player1.getName() +" " + "I REALLY LIKE THAT NAME!");
@@ -84,7 +90,7 @@ public class TheGame {
         System.out.println(" ");
         System.out.println("Player 2, enter your name:");
         String p2 = key.nextLine();
-        Player player2 = new Player(p2);
+        player2.setName(p2);
 
         System.out.println( player2.getName()+ " " + "WHAT A COOL NAME!");
         System.out.println(" ");
