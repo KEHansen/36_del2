@@ -48,12 +48,14 @@ public class TheGame {
                     System.out.println("it's dangerous to go alone, here take 100");
                     System.out.println(player1.getName() + " " + "you have: " + player1.getMoney() + "points");
                     System.out.println(" ");
+                    break;
                 case 2:
                     player1.addMoney(+250);
                     System.out.println("(TOWER)");
                     System.out.println("you saved the princess, she gave you 250");
                     System.out.println(player1.getName() + " " + "you have: " + player1.getMoney() + "points");
                     System.out.println(" ");
+                    break;
                 case 3:
                     player1.addMoney(-100);
                     System.out.println("(CRATER)");
@@ -61,6 +63,7 @@ public class TheGame {
                     System.out.println("you lost 100");
                     System.out.println(player1.getName()+ " " + "you have: " + player1.getMoney() + "points");
                     System.out.println(" ");
+                    break;
                 case 4:
                     player1.addMoney(+100);
                     System.out.println("(PALACE GATE)");
@@ -68,6 +71,7 @@ public class TheGame {
                     System.out.println("you earned 100");
                     System.out.println(player1.getName() + " " + "you have: " + player1.getMoney() + "points");
                     System.out.println(" ");
+                    break;
                 case 5:
                     player1.addMoney(-20);
                     System.out.println("(COLD DESERT)");
@@ -75,6 +79,7 @@ public class TheGame {
                     System.out.println("you lose 20");
                     System.out.println(player1.getName()+ " " + "you have: " + player1.getMoney() + "points");
                     System.out.println(" ");
+                    break;
                 case 6:
                     player1.addMoney(+180);
                     System.out.println("(WALLED CITY");
@@ -82,11 +87,13 @@ public class TheGame {
                     System.out.println("you earn 180");
                     System.out.println(player1.getName() + " " + "you have: " + player1.getMoney() + "points");
                     System.out.println(" ");
+                    break;
                 case 7:
                     System.out.println("(MONASTERY)");
                     System.out.println("you just went by, nothing happened");
                     System.out.println(player1.getName() + " " + "you have: " + player1.getMoney() + "points");
                     System.out.println(" ");
+                    break;
                 case 8:
                     player1.addMoney(-70);
                     System.out.println("(BLACK CAVE)");
@@ -94,6 +101,7 @@ public class TheGame {
                     System.out.println("you lost 70");
                     System.out.println(player1.getName() + " " + "you have: " + player1.getMoney() + "points");
                     System.out.println(" ");
+                    break;
                 case 9:
                     player1.addMoney(+60);
                     System.out.println("(HUTS IN THE MOUNTAIN)");
@@ -101,6 +109,7 @@ public class TheGame {
                     System.out.println("you earn 60");
                     System.out.println(player1.getName() + " " + "you have: " +player1.getMoney() + "points");
                     System.out.println(" ");
+                    break;
                 case 10:
                     player1.addMoney(-80);
                     System.out.println("(THE WEREWOLF-WALL)");
@@ -108,7 +117,12 @@ public class TheGame {
                     System.out.println("you lose 80 but ran so fast to get a ekstra turn");
                     System.out.println(player1.getName() + " " + "you have: " + player1.getMoney() + "points");
                     System.out.println(" ");
-                    //slå et slag igen
+                    slag1 = d1.roll();
+                    slag2 = d2.roll();
+                    tæller1 = slag1 + slag2;
+
+                    System.out.println("you roll:" + tæller1);
+                    System.out.println(" ");
                 case 11:
                     player1.addMoney(-50);
                     System.out.println("(THE PIT)");
@@ -116,6 +130,7 @@ public class TheGame {
                     System.out.println("you lose -50");
                     System.out.println(player1.getName() + " " + "you have: " + player1.getMoney() + "points");
                     System.out.println(" ");
+                    break;
                 case 12:
                     player1.addMoney(+650);
                     System.out.println("(GOLDMINE)");
@@ -123,6 +138,7 @@ public class TheGame {
                     System.out.println("ah yea alot of money, you earn 650!");
                     System.out.println(player1.getName() + " " + "you have: " + player1.getMoney() + "points");
                     System.out.println(" ");
+                    break;
 
                 /*default:
                     if (boardplace > MAX) {
