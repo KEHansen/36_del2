@@ -33,33 +33,62 @@ public class TheGame {
 
             switch (player1) {
                 case 1:
-
                     System.out.println("(BACK TO HOME TOWN)");
-                    System.out.println( "it's dangerous to go alone, here take +100");
-                    System.out.println(player1.addMoney(+100);
+                    System.out.println( "it's dangerous to go alone, here take 100");
+                    System.out.println(player1.addMoney(+100));
                     break;
                 case 2:
-                    "tower" + money + 250
+                    System.out.println("(TOWER)");
+                    System.out.println( "you saved the princess, she gave you 250");
+                    System.out.println(player1.addMoney(+250));
                 case 3:
-                    "crater" + money - 100
+                    System.out.println("(CRATER)");
+                    System.out.println("you nearly fell down the crater, only some money felt down");
+                    System.out.println("you lost 100");
+                    System.out.println(player1.addMoney(-100));
                 case 4:
-                    " Palace gates" + 100
+                    System.out.println("(PALACE GATE)");
+                    System.out.println("you sells some off you stuff to the prince");
+                    System.out.println("you earned 100");
+                    System.out.println(player1.addMoney(+100));
                 case 5:
-                    "Cold Desert" + money - 20
+                    System.out.println("(COLD DESERT)");
+                    System.out.println("you´re about to head into th cold Desert. So you buy a scarf");
+                    System.out.println("you lose 20");
+                    System.out.println(player1.addMoney(-20));
                 case 6:
-                    " Walled city" + money + 180
+                    System.out.println("(WALLED CITY");
+                    System.out.println("you sell a rare wall to a merchant");
+                    System.out.println("you earn 180");
+                    System.out.println(player1.addMoney(180));
                 case 7:
-                    "Monastery" + money + 0
+                    System.out.println("(MONASTERY)");
+                    System.out.println("you just went by, nothing happened");
                 case 8:
-                    "black cave" + money - 70
+                    System.out.println("(BLACK CAVE)");
+                    System.out.println("you dropped some money on your way out, never to be found again");
+                    System.out.println("you lost 70");
+                    System.out.println(player1.addMoney(-70));
                 case 9:
-                    " huts in the mountain " + money + 60
+                    System.out.println("(HUTS IN THE MOUNTAIN)");
+                    System.out.println("you show the villages memes. They love it and give you a present");
+                    System.out.println("you earn 60");
+                    System.out.println(player1.addMoney(60));
                 case 10:
-                    "the werewolf-wall" + money - 80 + " ekstra tur"
+                    System.out.println("(THE WEREWOLF-WALL)");
+                    System.out.println("you ran in fear for a hairy beast");
+                    System.out.println("you lose 80 but ran so fast to get a ekstra turn");
+                    System.out.println(player1.addMoney(-80));
                 case 11:
-                    "the pit" - 50
+                    System.out.println("(THE PIT)");
+                    System.out.println("you throw some money to check how deep the pit is");
+                    System.out.println("you lose -50");
+                    System.out.println(player1.addMoney(-50));
                 case 12:
-                    "goldmine" + 650
+                    System.out.println("(GOLDMINE)");
+                    System.out.println("you struck GOOOOLD!!!");
+                    System.out.println("ah yea alot of money, you earn 650!");
+                    System.out.println(player1.addMoney(650));
 
                 default:
                     if (boardplace > MAX) {
