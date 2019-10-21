@@ -40,7 +40,7 @@ public class TheGame {
             // spiller 1
 
             // kast terningerne
-            System.out.println("_____________________________________________________________________________________");
+            System.out.println("____________________________________________________________________________________ ");
             System.out.println(" ");
             System.out.println("(" + player1.getName() + "!" + " " + "click enter to throw the die)");
             key.nextLine();
@@ -54,7 +54,11 @@ public class TheGame {
             System.out.println("you roll:" + counter);
             System.out.println(" ");
 
+            //----------------------------------------------------------------------------------------------------------
+            // player1 bliver sendt ned i boardField som er vores case, længere nede.
             boardFields(counter, player1);
+
+            //----------------------------------------------------------------------------------------------------------
 
             if (player1.getMoney() > MAX_MONEY) {
                 System.out.println("____________________________________________________________________________________ ");
@@ -79,7 +83,13 @@ public class TheGame {
 
             System.out.println("you roll:" + counter);
             System.out.println(" ");
+
+            //----------------------------------------------------------------------------------------------------------
+
+            // player1 bliver sendt ned i boardField som er vores case, længere nede.
             boardFields(counter, player2);
+
+            //----------------------------------------------------------------------------------------------------------
 
                 if (player2.getMoney() > MAX_MONEY) {
                     System.out.println("____________________________________________________________________________________ ");
