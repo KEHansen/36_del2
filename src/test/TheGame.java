@@ -30,7 +30,7 @@ public class TheGame {
         // terning kasten for player 1 og player 2
 
         // hvis det er under 3000 som er MAX_MONEY så skal den forsæt med dette
-        while ((player1.getMoney() < MAX_MONEY) || (player2.getMoney() < MAX_MONEY)) {
+        while ((player1.getMoney() < MAX_MONEY) && (player2.getMoney() < MAX_MONEY)) {
 
             //----------------------------------------------------------------------------------------------------------
 
@@ -54,19 +54,9 @@ public class TheGame {
             if (counter1 > 12)
                 counter1 = counter1 % 12;
 
-            //----------------------------------------------------------------------------------------------------------
             // player1 bliver sendt ned i boardField som er vores case, længere nede.
 
             boardFields(counter1, player1);
-
-            //----------------------------------------------------------------------------------------------------------
-
-            // hvis de vinder, køre den dette igennem. Det er kun, hvis de kommer over 3000 point
-            if (player1.getMoney() > MAX_MONEY) {
-                System.out.println("____________________________________________________________________________________ ");
-                System.out.println("CONGRATULATION!!!" + " " + player1.getName() + " " + "you Won!!! with: " + player1.getMoney() + "points");
-                System.exit(0);
-            }
 
             //----------------------------------------------------------------------------------------------------------
 
@@ -88,25 +78,20 @@ public class TheGame {
             if (counter2 > 12)
                 counter2 = counter2 % 12;
 
-            //----------------------------------------------------------------------------------------------------------
-
             // player1 bliver sendt ned i boardField som er vores case, længere nede.
             boardFields(counter2, player2);
 
             //----------------------------------------------------------------------------------------------------------
-
-            // hvis de vinder, køre den dette igennem. Det er kun, hvis de kommer over 3000 point
-                if (player2.getMoney() > MAX_MONEY) {
-                    System.out.println("____________________________________________________________________________________ ");
-                    System.out.println(" ");
-                    System.out.println("CONGRATULATION!!!" + " " + player2.getName() + " " + "you Won!!! with: " + player2.getMoney() + "points");
-                    System.exit(0);
-
-        }
-        }
         }
 
+        // win metoden, som står i bunden
 
+        // vinder for spiller 1
+        Win(player1);
+
+        // vinder for spiller 2
+        Win(player2);
+    }
 
     //------------------------------------------------------------------------------------------------------------------
 
@@ -245,9 +230,9 @@ public class TheGame {
 
     //------------------------------------------------------------------------------------------------------------------
 
-    //INTRO dialog
+    //INTRO dialog metode
 
-    public static void playStart(){
+    public static void playStart() {
 
         System.out.println("WELCOME PLAYERS!");
         System.out.println("TO A WORLD OF ADVENTURE");
@@ -255,17 +240,17 @@ public class TheGame {
         System.out.println(" ");
         System.out.println("Player 1, enter your name:");
         String p1 = key.nextLine();
-       player1.setName(p1);
+        player1.setName(p1);
 
 
-        System.out.println( player1.getName() +" " + "I REALLY LIKE THAT NAME!");
+        System.out.println(player1.getName() + " " + "I REALLY LIKE THAT NAME!");
         System.out.println("WHAT ABOUT YOU, WHAT IS YOUR NAME?");
         System.out.println(" ");
         System.out.println("Player 2, enter your name:");
         String p2 = key.nextLine();
         player2.setName(p2);
 
-        System.out.println( player2.getName()+ " " + "WHAT A COOL NAME!");
+        System.out.println(player2.getName() + " " + "WHAT A COOL NAME!");
         System.out.println(" ");
         System.out.println("BEFORE WE START, I HAVE A GIFT FOR BOTH OF YOU");
         System.out.println(" ");
@@ -283,5 +268,18 @@ public class TheGame {
 
         //------------------------------------------------------------------------------
     }
-}
 
+    //------------------------------------------------------------------------------------------------------------------
+
+    //Vinder metode
+
+    public static void Win(Player player) {
+        // hvis de vinder, køre den dette igennem. Det er kun, hvis de kommer over 3000 point
+        if (player.getMoney() > MAX_MONEY) {
+            System.out.println("____________________________________________________________________________________ ");
+            System.out.println(" ");
+            System.out.println("CONGRATULATION!!!" + " " + player.getName() + " " + "you Won!!! with: " + player.getMoney() + "points");
+            System.exit(0);
+        }
+    }
+}
