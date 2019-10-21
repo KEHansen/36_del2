@@ -61,6 +61,7 @@ public class TheGame {
                 System.out.println(" ");
                 System.out.println("CONGRATULATION!!!" + " " + player1.getName() + " " + "you Won!!! with: " + player1.getMoney() + "points");
                 System.exit(0);
+            }
 
             //----------------------------------------------------------------------------------------------------------
 
@@ -87,12 +88,9 @@ public class TheGame {
                     System.exit(0);
 
         }
-
-
+        }
         }
 
-        }
-    }
 
 
     //------------------------------------------------------------------------------------------------------------------
