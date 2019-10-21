@@ -11,7 +11,7 @@ public class TheGame {
     private static final int MAX_MONEY = 3000;          // maks for at vinde spillet
     public static Dice d1 = new Dice();                 //Laver et objekt ved navn d1 ud fra dice klassen
     public static Dice d2 = new Dice();                 //Laver et objekt ved navn d2 ud fra dice klassen
-    public static int roll1, roll2, counter = 0;
+    public static int roll1, roll2, counter = 0, counter1 = 0, counter2 = 0;
     public static Scanner key = new Scanner(System.in); // en scanner
 
     public static Player player1 = new Player();        // navnet som bliver holdt på spiller 1
@@ -54,9 +54,13 @@ public class TheGame {
             System.out.println("you roll:" + counter);
             System.out.println(" ");
 
+            counter1 = counter1 + counter;
+            if (counter1 > 12)
+                counter1 = counter1 % 12;
+
             //----------------------------------------------------------------------------------------------------------
             // player1 bliver sendt ned i boardField som er vores case, længere nede.
-            boardFields(counter, player1);
+            boardFields(counter1, player1);
 
             //----------------------------------------------------------------------------------------------------------
 
@@ -84,10 +88,14 @@ public class TheGame {
             System.out.println("you roll:" + counter);
             System.out.println(" ");
 
+            counter2 = counter2 + counter;
+            if (counter2 > 12)
+                counter2 = counter2 % 12;
+
             //----------------------------------------------------------------------------------------------------------
 
             // player1 bliver sendt ned i boardField som er vores case, længere nede.
-            boardFields(counter, player2);
+            boardFields(counter2, player2);
 
             //----------------------------------------------------------------------------------------------------------
 
