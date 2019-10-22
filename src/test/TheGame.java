@@ -190,7 +190,7 @@ public class TheGame {
                 System.out.println("You landed on field 10: (THE WEREWOLF-WALL)");
                 System.out.println("-----------------------------------------------------------------------");
                 System.out.println("you ran in fear for a hairy beast");
-                System.out.println("you lose 80 points! but ran so fast, so you get a ekstra turn!");
+                System.out.println("you lose 80 points! but ran so fast, so you get an extra turn!");
                 System.out.println("-----------------------------------------------------------------------");
                 System.out.println(" ");
                 System.out.println(player.getName() + " " + "you have: " + player.getMoney() + "points");
@@ -219,7 +219,7 @@ public class TheGame {
                 System.out.println("You landed on field 12: (GOLDMINE)");
                 System.out.println("-----------------------------------------------------------------------");
                 System.out.println("you struck GOOOOLD!!!");
-                System.out.println("ah yea alot of money, you earn 650 points!");
+                System.out.println("ah yea a lot of money, you earn 650 points!");
                 System.out.println("-----------------------------------------------------------------------");
                 System.out.println(" ");
                 System.out.println(player.getName() + " " + "you have: " + player.getMoney() + "points");
