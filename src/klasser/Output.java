@@ -62,7 +62,7 @@ public class Output {
         System.out.println("(click enter to get your gifts) ");
         key.nextLine();
         System.out.println("-  -  -  -  -  -  -  -  -  -  -  -  -  ");
-        System.out.println("you both reseive 1000 start points!");
+        System.out.println("you both receive 1000 start points!");
         System.out.println("-  -  -  -  -  -  -  -  -  -  -  -  -  ");
         System.out.println(" ");
         System.out.println("lET US DIVE INTO A WORLD FULL OF ADVENTURE!");
