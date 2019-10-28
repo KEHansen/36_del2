@@ -12,7 +12,7 @@ public class Game {
     private static final int MAX_MONEY = 3000;          // maks for at vinde spillet
     public static Dice d1 = new Dice();                 //Laver et objekt ved navn d1 ud fra dice klassen
     public static Dice d2 = new Dice();                 //Laver et objekt ved navn d2 ud fra dice klassen
-    public static int roll1, roll2, counter = 0, counter1 = 0, counter2 = 0;
+    public static int counter = 0, counter1 = 0, counter2 = 0;
     public static Scanner key = new Scanner(System.in); // en scanner
 
           // navnet som bliver holdt på spiller 2
