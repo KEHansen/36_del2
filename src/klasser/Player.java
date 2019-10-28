@@ -20,6 +20,7 @@ public class Player {
         return money;
     }
 
+    //Sørger for at kontoen ikke går i minus, hvis det ikke gør udføres transaktionen, hvis det går i minus bliver pengene sat til 0
     public void addMoney(int diff) {
         if (this.money + diff >= 0)
             this.money += diff;
