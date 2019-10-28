@@ -23,16 +23,37 @@ public class Output {
         System.out.println("BEFORE WE START, LETS ME KNOW YOUR NAMES");
         System.out.println(" ");
         System.out.println("Player 1, enter your name:");
-        String p1 = key.nextLine();
-        player1.setName(p1);
-
+        String p1;
+        while (true){
+            p1 = key.nextLine();
+            if(p1.length()<2)
+                System.out.println("Name is too short");
+            else if (p1.length()>10)
+                System.out.println("Name is too long");
+            else {
+                player1.setName(p1);
+                break;
+            }
+        }
 
         System.out.println(player1.getName() + " " + "I REALLY LIKE THAT NAME!");
         System.out.println("WHAT ABOUT YOU, WHAT IS YOUR NAME?");
         System.out.println(" ");
         System.out.println("Player 2, enter your name:");
-        String p2 = key.nextLine();
-        player2.setName(p2);
+        String p2;
+        while (true){
+            p2 = key.nextLine();
+            if(p2.length()<2)
+                System.out.println("Name is too short");
+            else if (p2.length()>10)
+                System.out.println("Name is too long");
+            else if (p2.equals(p1))
+                System.out.println("Your name has to be different from player 1");
+            else {
+                player2.setName(p2);
+                break;
+            }
+        }
 
         System.out.println(player2.getName() + " " + "WHAT A COOL NAME!");
         System.out.println(" ");
