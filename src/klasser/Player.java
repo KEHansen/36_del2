@@ -20,9 +20,20 @@ public class Player {
         return money;
     }
 
+    public void setMoney(int money) {
+        this.money = money;
+    }
+
+
     public void addMoney(int diff) {
-        this.money += diff;
+        //Sørger for at kontoen ikke går i minus
+        if (this.money + diff >= 0) {
+            this.money += diff;
+        } else {
+            this.money = 0;
+        }
     }
 }
+
 
 
