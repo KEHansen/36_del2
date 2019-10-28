@@ -1,4 +1,4 @@
-package Klasser;
+package klasser;
 
 public class Dice {
         // her definere vi hvad MAX er for terningen

@@ -1,16 +1,10 @@
-package Klasser;
+package klasser;
 
 public class Player {
     private String name;
     private int money;
-    private boolean win;
 
     public Player() {
-        this.money = 1000;
-    }
-
-    public Player(String name) {
-        this.name = name;
         this.money = 1000;
     }
 
@@ -26,13 +20,8 @@ public class Player {
         return money;
     }
 
-    public void setMoney(int money) {
-        this.money = money;
-    }
-
     public void addMoney(int diff) {
         this.money += diff;
-
     }
 }
 
