@@ -2,8 +2,8 @@ package klasser;
 
 import java.util.Scanner;
 
-import static klasser.Output.player1;
-import static klasser.Output.player2;
+import static klasser.TextOutput.player1;
+import static klasser.TextOutput.player2;
 
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -21,7 +21,7 @@ public class Game {
 
     public static void playGame(){
         // play intro
-        Output.playStart();
+        TextOutput.playStart();
 
         //--------------------------------------------------------------------------------------------------------------
 
@@ -49,7 +49,7 @@ public class Game {
 
             // player1 bliver sendt ned i boardField som er vores case.
 
-            Output.boardFields(counter1, player1);
+            TextOutput.boardFields(counter1, player1);
 
             //----------------------------------------------------------------------------------------------------------
 
@@ -70,7 +70,7 @@ public class Game {
                 counter2 = counter2 % 12;
 
             // player1 bliver sendt ned i boardField som er vores case.
-            Output.boardFields(counter2, player2);
+            TextOutput.boardFields(counter2, player2);
 
             //----------------------------------------------------------------------------------------------------------
         }
@@ -78,9 +78,9 @@ public class Game {
         // win metoden, som står i bunden
 
         // vinder for spiller 1
-        Output.Win(player1);
+        TextOutput.Win(player1);
 
         // vinder for spiller 2
-        Output.Win(player2);
+        TextOutput.Win(player2);
     }
 }

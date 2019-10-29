@@ -2,7 +2,7 @@ package test;
 
 import klasser.Game;
 
-public class Test {
+public class TheGame {
     public static void main(String[] args) {
         Game.playGame();
     }

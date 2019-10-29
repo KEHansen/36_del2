@@ -2,7 +2,7 @@ package klasser;
 
 import java.util.Scanner;
 
-public class Output {
+public class TextOutput {
     private static final int MAX_MONEY = 3000;          // maks for at vinde spillet
     public static Dice d1 = new Dice();                 //Laver et objekt ved navn d1 ud fra dice klassen
     public static Dice d2 = new Dice();                 //Laver et objekt ved navn d2 ud fra dice klassen
