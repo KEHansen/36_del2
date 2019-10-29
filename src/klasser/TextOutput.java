@@ -213,7 +213,7 @@ public class TextOutput {
     public static void Win(Player player) {
 
         // hvis de vinder, køre den dette igennem. Det er kun, hvis de kommer over 3000 point
-        if (player.getMoney() > MAX_MONEY) {
+        if (player.getMoney() >= MAX_MONEY) {
             System.out.println("____________________________________________________________________________________ ");
             System.out.println(" ");
             System.out.println("CONGRATULATION!!!" + " " + player.getName() + " " + "you Won!!! with: " + player.getMoney() + "points");
