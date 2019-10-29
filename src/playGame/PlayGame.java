@@ -1,8 +1,8 @@
-package test;
+package playGame;
 
 import klasser.Game;
 
-public class TheGame {
+public class PlayGame {
     public static void main(String[] args) {
         Game.playGame();
     }

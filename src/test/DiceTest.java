@@ -1,4 +1,6 @@
-package klasser;
+package test;
+
+import klasser.Dice;
 
 import static org.junit.Assert.*;
 
