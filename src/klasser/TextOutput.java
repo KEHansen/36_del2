@@ -10,10 +10,9 @@ public class TextOutput {
     public static Player player1 = new Player();        // navnet som bliver holdt på spiller 1
     public static Player player2 = new Player();        // navnet som bliver holdt på spiller 2
 
-
     //------------------------------------------------------------------------------------------------------------------
 
-
+    
     //INTRO dialog
 
     public static void playStart() {

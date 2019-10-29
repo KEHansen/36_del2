@@ -1,21 +1,13 @@
 package klasser;
 
-import java.util.Scanner;
 
-import static klasser.TextOutput.player1;
-import static klasser.TextOutput.player2;
+import static klasser.TextOutput.*;
 
 
 //----------------------------------------------------------------------------------------------------------------------
-
 public class Game {
     private static final int MAX_MONEY = 3000;          // maks for at vinde spillet
-    public static Dice d1 = new Dice();                 //Laver et objekt ved navn d1 ud fra dice klassen
-    public static Dice d2 = new Dice();                 //Laver et objekt ved navn d2 ud fra dice klassen
     public static int counter = 0, counter1 = 0, counter2 = 0;
-    public static Scanner key = new Scanner(System.in); // en scanner
-
-          // navnet som bliver holdt på spiller 2
 
     //--------------------------------------------------------------------------------------------------------------
 
@@ -39,6 +31,7 @@ public class Game {
 
             //Slår med første terning ved at bruge roll funktionen i Dice klassen for både objektet d1 og d2
             counter = d1.roll() + d2.roll();
+
 
             System.out.println("you roll: " + counter);
             System.out.println(" ");
