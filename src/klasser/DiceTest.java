@@ -4,20 +4,13 @@ import static org.junit.Assert.*;
 
 public class DiceTest {
 
-    @org.junit.Before
-    public void setUp() throws Exception {
-    }
-
-    @org.junit.After
-    public void tearDown() throws Exception {
-    }
-
     @org.junit.Test
     public void roll() {
         Dice dice1 = new Dice();
+        Dice dice2 = new Dice();
         assertEquals(1, dice1.roll());
         assertEquals(2,dice1.roll());
-        assertEquals(2,dice1.roll(), 2.5);
+        assertEquals(2,dice1.roll()+dice2.roll(), 12);
     }
 
     @org.junit.Test
